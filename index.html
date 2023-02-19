@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="Style.css">
+    <script type="text/javascript" src="Script.js"></script>
+    <title>Encriptador por Alejandro Urazan</title>
+</head>
+<body>
+    <header>
+        <img id="logo" src="img/logo.png" alt="Logo de Alura">
+    </header>
+
+    <main>
+        <section class="seccion_iz">
+            <textarea id="EntradaTexto" placeholder="Ingrese el texto aqui (no mayusculas ni caracteres especiales)" cols="30" rows="10"></textarea>
+            <div class="botones">
+                <button type="button" id="botonCifrar">Encriptar</button>
+                <button type="button" id="botonDescifrar">Desencriptar</button>
+            </div>
+            
+        </section>
+
+        <section class="seccion_der">
+            <div id="void">
+                <img src="img/NotFind.png" alt="Mensaje no encontrado">
+                <h2 class="subtitulo">No se ha encontrado ningún mensaje</h2>
+                <p class="parrafo">Escriba texto para encriptar o desencriptar</p>
+            </div>
+                
+            <div id="resultado">
+                <textarea readonly="readonly" id="SalidaTexto" cols="30" rows="10"></textarea>
+                <button type="button" id="botonCopiar">Copiar</button>
+            </div>
+
+
+        </section>
+        
+        
+       
+        
+    </main>
+
+    <footer>
+
+        <p class="Autor">Por Jose Alejandro Bohorquez Urazan</p>
+    </footer>
+
+
+    
+</body>
+
+<script>
+
+    var boton = document.querySelector("#botonCifrar");
+    boton.onclick = encriptar;
+
+    var boton2 = document.querySelector("#botonDescifrar");
+    boton2.onclick = desencriptar;
+
+    var boton3 = document.querySelector("#botonCopiar");
+    boton3.onclick = copiar;
+
+</script>
+
+</html>
